@@ -1,15 +1,27 @@
-import React from 'react'
-import { TouchableOpacity, Text } from 'react-native';
-import { Actions } from 'react-native-router-flux';
+import React from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-const Home = () => {
-   const goToAbout = () => {
-      Actions.about()
-   }
-   return (
-      <TouchableOpacity style = {{ margin: 128 }} onPress = {goToAbout}>
-         <Text>This is HOME!</Text>
-      </TouchableOpacity>
-   )
+export default class Home extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        We have { this.props.screenProps.currentFriends.length } friends!
+        <Button
+          title="Add some friends"
+          onPress={() =>
+            this.props.navigation.navigate('Friends')
+          }
+        />
+      </View>
+    );
+  }
 }
-export default Home
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
