@@ -11,7 +11,7 @@ export default class MainActivity extends Component {
    
    FunctionToOpenSecondActivity = () =>
    {
-      this.props.navigation.navigate('Second');
+      this.props.navigation.navigate('SecondActivity');
       
    }
    

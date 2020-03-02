@@ -13,7 +13,7 @@ import { createAppContainer } from 'react-navigation';
 const AppNavigator = createStackNavigator({
   MainActivity: { screen: MainActivity },
  
-  secoMainActivitynd: { screen: SecondActivity }
+  SecondActivity: { screen: SecondActivity }
 });
 
 export default AppNavigator;
