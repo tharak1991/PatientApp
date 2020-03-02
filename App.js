@@ -1,55 +1,44 @@
 
+import React, { Component } from 'react';
+ 
+import { AppRegistry, StyleSheet, Text, View, Button } from 'react-native';
+ 
+
+import { AppNavigator } from './AppNavigator';
+import { AppContainer } from './AppNavigator';
 
 
-  import React from 'react';
-  import { StyleSheet, Text, View, Button } from 'react-native';
-  // import AppNavigator from './AppNavigator';
 
-  export default class App extends React.Component {
-    constructor(props) {
-      super(props)
-      this.state = {
-        possibleFriends: [
-          'Allie',
-          'Gator',
-          'Lizzie',
-        ],
-        currentFriends: [],
-      }
-    }
 
-    addFriend = (index) => {
-      const {
-        currentFriends,
-        possibleFriends,
-      } = this.state
+ 
 
-      // Pull friend out of possibleFriends
-      const addedFriend = possibleFriends.splice(index, 1)
+export default class App extends React.Component {
 
-      // And put friend in currentFriends
-      currentFriends.push(addedFriend)
+render() {
+  return(
+    <AppContainer/>
+  
 
-      // Finally, update our app state
-      this.setState({
-        currentFriends,
-        possibleFriends,
-      })
-    }
+  );
 
-    render() {
-      return(
-        <Text>scdsadfasd</Text>
-
-      );
-      // return (
-      //   <AppNavigator
-      //     screenProps={ {
-      //       currentFriends: this.state.currentFriends,
-      //       possibleFriends: this.state.possibleFriends,
-      //       addFriend: this.addFriend,
-      //     } }
-      //   />
-      // );
-    }
-  }
+}
+}
+ 
+const styles = StyleSheet.create(
+{
+ MainContainer:
+ {
+    justifyContent: 'center',
+    flex:1,
+    margin: 10
+  
+ },
+ 
+ TextStyle:
+ {
+    fontSize: 23,
+    textAlign: 'center',
+    color: '#000',
+ },
+ 
+});
