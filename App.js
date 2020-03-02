@@ -24,6 +24,22 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+// import {Routes} from './src/page/Routes.js';
+// import { AppRegistry } from 'react-native';
+
+
+// class App extends Component {
+//   render() {
+//      return (
+//       <Text style={styles.sectionDescription}>
+//                 <ReloadInstructions />
+//               </Text> 
+//      )
+//   }
+// }
+// export default App
+
+// AppRegistry.registerComponent('App', () => App)
 const App: () => React$Node = () => {
   return (
     <>
