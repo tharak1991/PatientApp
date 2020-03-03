@@ -1,10 +1,8 @@
 
 import React, { Component } from 'react';
  
-import { AppRegistry, StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet } from 'react-native';
  
-
-import { AppNavigator } from './AppNavigator';
 import { AppContainer } from './AppNavigator';
 
 
