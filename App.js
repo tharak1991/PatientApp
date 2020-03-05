@@ -3,7 +3,11 @@ import React, { Component } from 'react';
  
 import { StyleSheet } from 'react-native';
  
-import { AppContainer } from './AppNavigator';
+import { AppContainer2 } from './AppNavigator';
+// import { Provider } from 'react-redux';
+// import { createStore } from 'redux';
+
+import { AppContainer } from './InitialNavigator';
 
 
 
@@ -14,7 +18,11 @@ export default class App extends React.Component {
 
 render() {
   return(
-    <AppContainer/>
+    // <Provider store={createStore(reducers)}>
+        <AppContainer />
+      // </Provider>
+    // <AppContainer/>
+    
   
 
   );

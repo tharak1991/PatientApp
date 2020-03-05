@@ -3,20 +3,20 @@ import SecondActivity  from './src/page/SecondActivity';
 import MainActivity from './src/page/MainActivity';
 	
 import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 
 
 
 
-const AppNavigator = createStackNavigator({
+const HomeNavigator = createSwitchNavigator({
   MainActivity: { screen: MainActivity },
  
   SecondActivity: { screen: SecondActivity }
 });
 
-export default AppNavigator;
-export const AppContainer = createAppContainer(AppNavigator);
+export default HomeNavigator;
+// export const AppContainer2 = createAppContainer(AppNavigator);
 
 
 
